@@ -1,0 +1,4 @@
+docker/postgres/*.sh text eol=lf
+docker/postgres/*.sql text eol=lf
+fixtures/documents/**/*.pdf binary
+evaluacion_banco_agentes.csv -text

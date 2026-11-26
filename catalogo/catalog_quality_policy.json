@@ -1,0 +1,9 @@
+{
+  "title": "Política de calidad del catálogo de clientes de Banco Agentes",
+  "version": "1.0",
+  "effective_from": "2026-11-23",
+  "kind": "Política interna de la demo",
+  "rules": {
+    "DQ-01": "La completitud se evalúa sobre los campos básicos que el generador del catálogo puebla para cada cliente. Cada registro con al menos un valor NULL cuenta una vez en el total y una vez en cada campo afectado. El desglose se ordena de mayor a menor por cantidad de valores NULL."
+  }
+}

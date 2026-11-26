@@ -1,0 +1,10 @@
+{
+  "title": "Política de acceso a datos de Banco Agentes",
+  "version": "1.0",
+  "effective_from": "2026-11-19",
+  "kind": "Política interna de la demo",
+  "rules": {
+    "DG-01": "Empleado puede ver el ranking de saldos con alias por resultado. El detalle de un cliente específico está restringido, incluso si se identifica por su posición o alias en el ranking.",
+    "DG-02": "Cliente puede ver sus propias cuentas. El ranking de clientes está reservado al perfil Empleado."
+  }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#003746">
+  <title>Banca Inteligente</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/charts.css">
+  <script src="/assets/plotly.min.js" defer></script>
+  <script src="/assets/charts.js" defer></script>
+  <script src="/assets/responses.js" defer></script>
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <div id="login-view" class="login-layout">
+    <section class="intro" aria-labelledby="product-name">
+      <div class="intro-copy">
+        <span class="brand-logo"><img src="/assets/banamexLogo.jpg" alt="Banamex" width="1200" height="1200"></span>
+        <h1 id="product-name">Banca Inteligente</h1>
+        <p>Aquí. Para ti. Siempre.</p>
+      </div>
+    </section>
+    <main class="login-area">
+      <div class="login-card">
+        <h2>Inicia sesión</h2>
+        <form id="login-form">
+          <label for="username">Usuario</label>
+          <input id="username" name="username" autocomplete="username" required maxlength="64">
+          <label for="password">Contraseña</label>
+          <div class="password-field">
+            <input id="password" name="password" type="password" autocomplete="current-password" required maxlength="128">
+            <button id="show-password" type="button" aria-label="Mostrar contraseña" aria-controls="password">Mostrar</button>
+          </div>
+          <p id="login-error" class="error" role="alert"></p>
+          <button type="submit" class="primary" id="login-button">Entrar al chat <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <div id="chat-view" class="app-layout" hidden>
+    <aside class="sidebar">
+      <span class="brand-logo"><img src="/assets/banamexLogo.jpg" alt="Banamex" width="1200" height="1200"></span>
+      <div class="nav-item" aria-current="page"><span aria-hidden="true">◌</span> Conversación</div>
+      <button id="new-chat" class="new-chat" type="button">Nueva conversación</button>
+      <div class="profile-card">
+        <span class="avatar" id="avatar" aria-hidden="true">C</span>
+        <strong id="profile-name">Cliente</strong>
+      </div>
+      <button id="logout" class="logout" type="button">Cerrar sesión <span aria-hidden="true">↗</span></button>
+    </aside>
+    <main class="chat-main">
+      <header class="topbar">
+        <span><span class="topbar-context">Chat de consultas <span class="slash" aria-hidden="true">/</span></span> <strong>Banca Inteligente</strong></span>
+      </header>
+      <div class="conversation" id="conversation">
+        <section id="welcome" class="welcome">
+          <div class="welcome-symbol" aria-hidden="true">
+            <span class="banamex-symbol"><img src="/assets/banamexLogo.jpg" alt="" width="1200" height="1200"></span>
+          </div>
+          <p class="eyebrow">Banamex</p>
+          <h1>¿Qué quieres consultar?</h1>
+          <div id="suggestions" class="suggestions"></div>
+        </section>
+        <div id="messages" aria-live="polite" aria-relevant="additions"></div>
+      </div>
+      <div class="composer-area">
+        <form id="chat-form" class="composer">
+          <button id="attach" type="button" aria-label="Adjuntar documentos" aria-describedby="attachment-help">
+            <span aria-hidden="true">+</span>
+          </button>
+          <label class="sr-only" for="question">Escribe tu pregunta</label>
+          <textarea id="question" rows="1" maxlength="4000" placeholder="Escribe tu pregunta…" required></textarea>
+          <button id="send" type="submit" aria-label="Enviar pregunta"><span aria-hidden="true">↑</span></button>
+        </form>
+        <input id="document-files" type="file" accept="application/pdf,image/png,image/jpeg" multiple hidden>
+        <ul id="attachments" class="attachments" aria-label="Adjuntos seleccionados"></ul>
+        <p id="document-error" class="error" role="alert"></p>
+        <p id="attachment-help" class="composer-note">PDF, PNG o JPG · 5 MiB por archivo · 6 archivos distintos por usuario. Los adjuntos seleccionados se envían a Gemini para su lectura. Adjunta solo documentos ficticios o de prueba.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

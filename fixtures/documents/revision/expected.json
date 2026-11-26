@@ -1,0 +1,198 @@
+{
+  "ine_ficticia.png": {
+    "tipo": "identificacion",
+    "legible": true,
+    "campos": {
+      "clase_identificacion": {
+        "valor": "INE",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "INE"
+      },
+      "nombre": {
+        "valor": "Persona Ejemplo Alfa",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Persona Ejemplo Alfa"
+      },
+      "fecha_vencimiento": {
+        "valor": "2020",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Vigencia",
+        "texto_original": "2010 - 2020"
+      },
+      "domicilio": {
+        "valor": "Calle Inventada 10",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Calle Inventada 10"
+      }
+    },
+    "paginas": [
+      {
+        "pagina": 1,
+        "texto": "DOCUMENTO SINTETICO - SIN VALIDEZ\n\nINE FICTICIA - SIN VALIDEZ\nNombre: Persona Ejemplo Alfa\nVigencia: 2010 - 2020\nDomicilio: Calle Inventada 10",
+        "estado": "leida"
+      }
+    ]
+  },
+  "ine_ficticia.pdf": {
+    "tipo": "identificacion",
+    "legible": true,
+    "campos": {
+      "clase_identificacion": {
+        "valor": "INE",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "INE"
+      },
+      "nombre": {
+        "valor": "Persona Ejemplo Alfa",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Persona Ejemplo Alfa"
+      },
+      "fecha_vencimiento": {
+        "valor": "2020",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Vigencia",
+        "texto_original": "2010 - 2020"
+      },
+      "domicilio": {
+        "valor": "Calle Inventada 10",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Calle Inventada 10"
+      }
+    },
+    "paginas": [
+      {
+        "pagina": 1,
+        "texto": "DOCUMENTO SINTETICO - SIN VALIDEZ\n\nINE FICTICIA - SIN VALIDEZ\nNombre: Persona Ejemplo Alfa\nVigencia: 2010 - 2020\nDomicilio: Calle Inventada 10",
+        "estado": "leida"
+      }
+    ]
+  },
+  "recibo_servicio.png": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "tipo_comprobante": {
+        "valor": "electricidad",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "electricidad"
+      },
+      "servicio_descripcion": {
+        "valor": "electricidad",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "electricidad"
+      },
+      "titular": {
+        "valor": "Persona Ejemplo Beta",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Persona Ejemplo Beta"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Inventada 20",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Calle Inventada 20"
+      },
+      "fecha_limite_pago": {
+        "valor": "2020-01-15",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Límite de pago",
+        "texto_original": "2020-01-15"
+      },
+      "importe_total": {
+        "valor": "250.00",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Total",
+        "texto_original": "250.00"
+      }
+    },
+    "paginas": [
+      {
+        "pagina": 1,
+        "texto": "DOCUMENTO SINTETICO - SIN VALIDEZ\n\nRECIBO DE SERVICIOS FICTICIO\nServicio: electricidad\nTitular: Persona Ejemplo Beta\nDomicilio del servicio: Calle Inventada 20\nLimite de pago: 2020-01-15\nTotal: 250.00 MXN",
+        "estado": "leida"
+      }
+    ]
+  },
+  "cfdi_pago.jpg": {
+    "tipo": "cfdi_nomina",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "Persona Ejemplo Gamma",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "Persona Ejemplo Gamma"
+      },
+      "periodo_documento": {
+        "valor": "primera quincena de enero 2020",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Periodo",
+        "texto_original": "primera quincena de enero 2020"
+      },
+      "neto_a_pagar": {
+        "valor": "150.00",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": "Neto a pagar",
+        "texto_original": "150.00"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "confianza": 0.99,
+        "pagina": 1,
+        "lectura": "leido",
+        "etiqueta": null,
+        "texto_original": "MXN"
+      }
+    },
+    "paginas": [
+      {
+        "pagina": 1,
+        "texto": "DOCUMENTO SINTETICO - SIN VALIDEZ\n\nCFDI DE NOMINA FICTICIO\nTitular: Persona Ejemplo Gamma\nPeriodo: primera quincena de enero 2020\nNeto a pagar: 150.00 MXN",
+        "estado": "leida"
+      }
+    ]
+  }
+}

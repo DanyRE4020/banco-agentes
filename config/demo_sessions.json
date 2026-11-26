@@ -1,0 +1,11 @@
+{
+  "client": {
+    "num_cte": 1,
+    "num_cta": 200000
+  },
+  "other": {
+    "num_cte": 2,
+    "num_cta": 200001
+  },
+  "source": "SQL sobre cfg.fact_sdos_captacoloca_m, AHORRO, 20260630"
+}

@@ -1,0 +1,47 @@
+.new-chat {
+  margin-top: 12px;
+  padding: 9px 11px;
+  border: 1px solid #70949b;
+  border-radius: 10px;
+  color: white;
+  background: transparent;
+  text-align: left;
+}
+
+.chat-chart {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #d6e6e9;
+  border-radius: 16px;
+  background: #f7fbfc;
+}
+
+.chat-chart p { margin: .25rem 0; }
+.chat-chart > svg { width: 100%; height: auto; }
+.chat-chart > svg text { fill: #31515a; font: 12px system-ui, sans-serif; }
+.balance-plot { width: 100%; min-height: 19rem; }
+.plot-grid { stroke: #d6e6e9; stroke-width: 1; }
+.plot-bar { fill: #176375; }
+.plot-line { fill: none; stroke: #176375; stroke-width: 3; }
+.plot-dot { fill: #ff1b44; stroke: white; stroke-width: 1.5; }
+.chat-chart details { margin-top: .5rem; font-size: .87rem; }
+.chat-chart summary { cursor: pointer; }
+.chat-chart ul { overflow-wrap: anywhere; }
+.chart-table { overflow-x: auto; }
+.chart-table table { border-collapse: collapse; width: 100%; }
+.chart-table caption { text-align: left; padding: .5rem; }
+.chart-table th, .chart-table td { padding: .45rem .55rem; text-align: left; border-bottom: 1px solid #d6e6e9; }
+.chart-table td { font-variant-numeric: tabular-nums; }
+
+@media (max-width: 680px) {
+  .new-chat { margin-top: 0; padding: 5px 7px; font-size: 10px; }
+  .chat-chart { padding: .5rem; }
+}
+
+
+.response-sources { border-top: 1px solid #d6e6e9; margin-top: 1rem; padding-top: .8rem; font-size: .85rem; }
+.response-sources summary { cursor: pointer; font-weight: 600; }
+.response-sources li { margin: .7rem 0; overflow-wrap: anywhere; }
+.response-sources a { color: #08697e; }
+.query-record { white-space: pre-wrap; font: inherit; overflow-wrap: anywhere; }
+.response-table { margin: 1rem 0; font-size: .88rem; }

@@ -1,0 +1,6 @@
+La pregunta actual pide un saldo real fuera del cálculo soportado por Analytics.
+Explica que no puedes calcularlo: no existe una herramienta ni una conexión a la
+base de datos habilitada para esa consulta concreta. No afirmes que PostgreSQL
+está apagado: su estado no se ha comprobado en este turno. No presentes la
+limitación como una prohibición de tratar información financiera. No des importes
+ni afirmes que consultaste datos. Consulta al Steward solo para metadatos.

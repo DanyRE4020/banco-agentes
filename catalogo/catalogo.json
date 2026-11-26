@@ -1,0 +1,1410 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+      "sha256": "eee849f1bfbdc138291a81682a0ed836ac5dbd37b9c499c2a00a273377e7696a"
+    },
+    {
+      "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+      "sha256": "6dfc90c1e55b2092584499c05a74b55309aeda004d8ce135e0bc7e6f765ecd2b"
+    },
+    {
+      "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+      "sha256": "d28d22b90e9882fa3780c23d1107df79ce72f9556ba8351d505eb108b0756fa3"
+    }
+  ],
+  "tables": [
+    {
+      "id": "table:dim.dim_cliente",
+      "name": "dim.dim_cliente",
+      "temporary": false,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 12,
+        "end_line": 27,
+        "excerpt": "CREATE TABLE dim.dim_cliente (\n  num_cte INTEGER NOT NULL PRIMARY KEY,\n  fec_alta DATE,\n  fec_nac DATE,\n  tipo_persona VARCHAR(10),\n  genero_cte VARCHAR(10),\n  segmento_cte VARCHAR(20),\n  giro_empresa VARCHAR(30),\n  cve_territorio VARCHAR(255),\n  cve_dir VARCHAR(255),\n  cve_subdir VARCHAR(255),\n  cve_sucursal INTEGER,\n  cve_promotor VARCHAR(10),\n  CHECK (tipo_persona IN ('PF','PM')),\n  CHECK (genero_cte IN ('HOMBRE','MUJER','NO APLICA'))\n)"
+      },
+      "columns": [
+        {
+          "id": "column:dim.dim_cliente.num_cte",
+          "name": "num_cte",
+          "type": "INTEGER",
+          "declaration": "num_cte INTEGER NOT NULL PRIMARY KEY",
+          "nullable": false,
+          "primary_key": true,
+          "unique": true,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 13,
+            "end_line": 13,
+            "excerpt": "num_cte INTEGER NOT NULL PRIMARY KEY"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.fec_alta",
+          "name": "fec_alta",
+          "type": "DATE",
+          "declaration": "fec_alta DATE",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 14,
+            "end_line": 14,
+            "excerpt": "fec_alta DATE"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.fec_nac",
+          "name": "fec_nac",
+          "type": "DATE",
+          "declaration": "fec_nac DATE",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 15,
+            "end_line": 15,
+            "excerpt": "fec_nac DATE"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.tipo_persona",
+          "name": "tipo_persona",
+          "type": "VARCHAR(10)",
+          "declaration": "tipo_persona VARCHAR(10)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 16,
+            "end_line": 16,
+            "excerpt": "tipo_persona VARCHAR(10)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.genero_cte",
+          "name": "genero_cte",
+          "type": "VARCHAR(10)",
+          "declaration": "genero_cte VARCHAR(10)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 17,
+            "end_line": 17,
+            "excerpt": "genero_cte VARCHAR(10)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.segmento_cte",
+          "name": "segmento_cte",
+          "type": "VARCHAR(20)",
+          "declaration": "segmento_cte VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 18,
+            "end_line": 18,
+            "excerpt": "segmento_cte VARCHAR(20)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.giro_empresa",
+          "name": "giro_empresa",
+          "type": "VARCHAR(30)",
+          "declaration": "giro_empresa VARCHAR(30)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 19,
+            "end_line": 19,
+            "excerpt": "giro_empresa VARCHAR(30)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.cve_territorio",
+          "name": "cve_territorio",
+          "type": "VARCHAR(255)",
+          "declaration": "cve_territorio VARCHAR(255)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 20,
+            "end_line": 20,
+            "excerpt": "cve_territorio VARCHAR(255)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.cve_dir",
+          "name": "cve_dir",
+          "type": "VARCHAR(255)",
+          "declaration": "cve_dir VARCHAR(255)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 21,
+            "end_line": 21,
+            "excerpt": "cve_dir VARCHAR(255)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.cve_subdir",
+          "name": "cve_subdir",
+          "type": "VARCHAR(255)",
+          "declaration": "cve_subdir VARCHAR(255)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 22,
+            "end_line": 22,
+            "excerpt": "cve_subdir VARCHAR(255)"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.cve_sucursal",
+          "name": "cve_sucursal",
+          "type": "INTEGER",
+          "declaration": "cve_sucursal INTEGER",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 23,
+            "end_line": 23,
+            "excerpt": "cve_sucursal INTEGER"
+          }
+        },
+        {
+          "id": "column:dim.dim_cliente.cve_promotor",
+          "name": "cve_promotor",
+          "type": "VARCHAR(10)",
+          "declaration": "cve_promotor VARCHAR(10)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 24,
+            "end_line": 24,
+            "excerpt": "cve_promotor VARCHAR(10)"
+          }
+        }
+      ],
+      "constraints": [
+        "CHECK (tipo_persona IN ('PF','PM'))",
+        "CHECK (genero_cte IN ('HOMBRE','MUJER','NO APLICA'))"
+      ],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    },
+    {
+      "id": "table:dim.dim_producto",
+      "name": "dim.dim_producto",
+      "temporary": false,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 82,
+        "end_line": 90,
+        "excerpt": "CREATE TABLE dim.dim_producto (\n  cve_producto VARCHAR(40) NOT NULL PRIMARY KEY,\n  cve_dominio VARCHAR(20) NOT NULL,\n  grupo_producto VARCHAR(20) NOT NULL,\n  cve_subproducto VARCHAR(40) NOT NULL,\n  descripcion VARCHAR(100),\n  activo BOOLEAN DEFAULT TRUE,\n  CHECK (cve_dominio IN ('DEPOSITS','LENDING','TDC'))\n)"
+      },
+      "columns": [
+        {
+          "id": "column:dim.dim_producto.cve_producto",
+          "name": "cve_producto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_producto VARCHAR(40) NOT NULL PRIMARY KEY",
+          "nullable": false,
+          "primary_key": true,
+          "unique": true,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 83,
+            "end_line": 83,
+            "excerpt": "cve_producto VARCHAR(40) NOT NULL PRIMARY KEY"
+          }
+        },
+        {
+          "id": "column:dim.dim_producto.cve_dominio",
+          "name": "cve_dominio",
+          "type": "VARCHAR(20)",
+          "declaration": "cve_dominio VARCHAR(20) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 84,
+            "end_line": 84,
+            "excerpt": "cve_dominio VARCHAR(20) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_producto.grupo_producto",
+          "name": "grupo_producto",
+          "type": "VARCHAR(20)",
+          "declaration": "grupo_producto VARCHAR(20) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 85,
+            "end_line": 85,
+            "excerpt": "grupo_producto VARCHAR(20) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_producto.cve_subproducto",
+          "name": "cve_subproducto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_subproducto VARCHAR(40) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 86,
+            "end_line": 86,
+            "excerpt": "cve_subproducto VARCHAR(40) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_producto.descripcion",
+          "name": "descripcion",
+          "type": "VARCHAR(100)",
+          "declaration": "descripcion VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 87,
+            "end_line": 87,
+            "excerpt": "descripcion VARCHAR(100)"
+          }
+        },
+        {
+          "id": "column:dim.dim_producto.activo",
+          "name": "activo",
+          "type": "BOOLEAN",
+          "declaration": "activo BOOLEAN DEFAULT TRUE",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 88,
+            "end_line": 88,
+            "excerpt": "activo BOOLEAN DEFAULT TRUE"
+          }
+        }
+      ],
+      "constraints": [
+        "CHECK (cve_dominio IN ('DEPOSITS','LENDING','TDC'))"
+      ],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    },
+    {
+      "id": "table:dim.dim_txn",
+      "name": "dim.dim_txn",
+      "temporary": false,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 101,
+        "end_line": 107,
+        "excerpt": "CREATE TABLE dim.dim_txn (\n  cve_producto VARCHAR(40) NOT NULL,\n  cve_dominio VARCHAR(20) NOT NULL,\n  grupo_producto VARCHAR(20) NOT NULL,\n  cve_txn INTEGER NOT NULL,\n  desc_txn VARCHAR(40) NOT NULL\n)"
+      },
+      "columns": [
+        {
+          "id": "column:dim.dim_txn.cve_producto",
+          "name": "cve_producto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_producto VARCHAR(40) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 102,
+            "end_line": 102,
+            "excerpt": "cve_producto VARCHAR(40) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_txn.cve_dominio",
+          "name": "cve_dominio",
+          "type": "VARCHAR(20)",
+          "declaration": "cve_dominio VARCHAR(20) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 103,
+            "end_line": 103,
+            "excerpt": "cve_dominio VARCHAR(20) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_txn.grupo_producto",
+          "name": "grupo_producto",
+          "type": "VARCHAR(20)",
+          "declaration": "grupo_producto VARCHAR(20) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 104,
+            "end_line": 104,
+            "excerpt": "grupo_producto VARCHAR(20) NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_txn.cve_txn",
+          "name": "cve_txn",
+          "type": "INTEGER",
+          "declaration": "cve_txn INTEGER NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 105,
+            "end_line": 105,
+            "excerpt": "cve_txn INTEGER NOT NULL"
+          }
+        },
+        {
+          "id": "column:dim.dim_txn.desc_txn",
+          "name": "desc_txn",
+          "type": "VARCHAR(40)",
+          "declaration": "desc_txn VARCHAR(40) NOT NULL",
+          "nullable": false,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+            "line": 106,
+            "end_line": 106,
+            "excerpt": "desc_txn VARCHAR(40) NOT NULL"
+          }
+        }
+      ],
+      "constraints": [],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    },
+    {
+      "id": "table:cfg.fact_sdos_captacoloca_m",
+      "name": "cfg.fact_sdos_captacoloca_m",
+      "temporary": false,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 30,
+        "end_line": 40,
+        "excerpt": "CREATE TABLE cfg.fact_sdos_captacoloca_m (\n\tnum_cta int4 NULL,\n\tnum_cte int4 NULL,\n\tcve_producto varchar(40) NULL,\n\tfec_alta date NULL,\n\tcve_mes_alta int4 NULL,\n\tsaldo_apertura numeric(18, 2) NULL,\n\tsaldo_mes numeric(18, 2) NULL,\n\tfec_informacion int4 NULL,\n\tdominio varchar(20) NULL\n)"
+      },
+      "columns": [
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.num_cta",
+          "name": "num_cta",
+          "type": "INT4",
+          "declaration": "num_cta int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 31,
+            "end_line": 31,
+            "excerpt": "num_cta int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.num_cte",
+          "name": "num_cte",
+          "type": "INT4",
+          "declaration": "num_cte int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 32,
+            "end_line": 32,
+            "excerpt": "num_cte int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.cve_producto",
+          "name": "cve_producto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_producto varchar(40) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 33,
+            "end_line": 33,
+            "excerpt": "cve_producto varchar(40) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.fec_alta",
+          "name": "fec_alta",
+          "type": "DATE",
+          "declaration": "fec_alta date NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 34,
+            "end_line": 34,
+            "excerpt": "fec_alta date NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.cve_mes_alta",
+          "name": "cve_mes_alta",
+          "type": "INT4",
+          "declaration": "cve_mes_alta int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 35,
+            "end_line": 35,
+            "excerpt": "cve_mes_alta int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.saldo_apertura",
+          "name": "saldo_apertura",
+          "type": "NUMERIC(18, 2)",
+          "declaration": "saldo_apertura numeric(18, 2) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 36,
+            "end_line": 36,
+            "excerpt": "saldo_apertura numeric(18, 2) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.saldo_mes",
+          "name": "saldo_mes",
+          "type": "NUMERIC(18, 2)",
+          "declaration": "saldo_mes numeric(18, 2) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 37,
+            "end_line": 37,
+            "excerpt": "saldo_mes numeric(18, 2) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.fec_informacion",
+          "name": "fec_informacion",
+          "type": "INT4",
+          "declaration": "fec_informacion int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 38,
+            "end_line": 38,
+            "excerpt": "fec_informacion int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_sdos_captacoloca_m.dominio",
+          "name": "dominio",
+          "type": "VARCHAR(20)",
+          "declaration": "dominio varchar(20) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+            "line": 39,
+            "end_line": 39,
+            "excerpt": "dominio varchar(20) NULL"
+          }
+        }
+      ],
+      "constraints": [],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    },
+    {
+      "id": "table:cfg.fact_txn_captacoloca_d",
+      "name": "cfg.fact_txn_captacoloca_d",
+      "temporary": false,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 47,
+        "end_line": 58,
+        "excerpt": "CREATE TABLE cfg.fact_txn_captacoloca_d (\n\tnum_cta int4 NULL,\n\tnum_cte int4 NULL,\n\tcve_producto varchar(40) NULL,\n\tfec_txn date NULL,\n\tcve_mes_txn int4 NULL,\n\tsaldo_txn numeric(18, 2) NULL,\n\tcve_txn int4 NULL,\n        desc_txn varchar(40) NULL,\n\tfec_informacion int4 NULL,\n\tdominio varchar(20) NULL\n)"
+      },
+      "columns": [
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.num_cta",
+          "name": "num_cta",
+          "type": "INT4",
+          "declaration": "num_cta int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 48,
+            "end_line": 48,
+            "excerpt": "num_cta int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.num_cte",
+          "name": "num_cte",
+          "type": "INT4",
+          "declaration": "num_cte int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 49,
+            "end_line": 49,
+            "excerpt": "num_cte int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.cve_producto",
+          "name": "cve_producto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_producto varchar(40) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 50,
+            "end_line": 50,
+            "excerpt": "cve_producto varchar(40) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.fec_txn",
+          "name": "fec_txn",
+          "type": "DATE",
+          "declaration": "fec_txn date NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 51,
+            "end_line": 51,
+            "excerpt": "fec_txn date NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.cve_mes_txn",
+          "name": "cve_mes_txn",
+          "type": "INT4",
+          "declaration": "cve_mes_txn int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 52,
+            "end_line": 52,
+            "excerpt": "cve_mes_txn int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.saldo_txn",
+          "name": "saldo_txn",
+          "type": "NUMERIC(18, 2)",
+          "declaration": "saldo_txn numeric(18, 2) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 53,
+            "end_line": 53,
+            "excerpt": "saldo_txn numeric(18, 2) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.cve_txn",
+          "name": "cve_txn",
+          "type": "INT4",
+          "declaration": "cve_txn int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 54,
+            "end_line": 54,
+            "excerpt": "cve_txn int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.desc_txn",
+          "name": "desc_txn",
+          "type": "VARCHAR(40)",
+          "declaration": "desc_txn varchar(40) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 55,
+            "end_line": 55,
+            "excerpt": "desc_txn varchar(40) NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.fec_informacion",
+          "name": "fec_informacion",
+          "type": "INT4",
+          "declaration": "fec_informacion int4 NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 56,
+            "end_line": 56,
+            "excerpt": "fec_informacion int4 NULL"
+          }
+        },
+        {
+          "id": "column:cfg.fact_txn_captacoloca_d.dominio",
+          "name": "dominio",
+          "type": "VARCHAR(20)",
+          "declaration": "dominio varchar(20) NULL",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 57,
+            "end_line": 57,
+            "excerpt": "dominio varchar(20) NULL"
+          }
+        }
+      ],
+      "constraints": [],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    },
+    {
+      "id": "table:tmp_calculo_mes",
+      "name": "tmp_calculo_mes",
+      "temporary": true,
+      "kind": "explicit_ddl",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 119,
+        "end_line": 133,
+        "excerpt": "CREATE TEMP TABLE tmp_calculo_mes (\n        num_cta INTEGER,\n        num_cte INTEGER,\n        cve_producto VARCHAR(40),\n        cve_dominio VARCHAR(20),\n        grupo_producto VARCHAR(20),\n        fec_alta DATE,\n        cve_mes_alta INTEGER,\n        saldo_anterior NUMERIC(18,2),\n        saldo_objetivo NUMERIC(18,2),\n        incremento_objetivo NUMERIC(18,2),\n        importe_1 NUMERIC(18,2),\n        importe_2 NUMERIC(18,2),\n        importe_3 NUMERIC(18,2)\n    )"
+      },
+      "columns": [
+        {
+          "id": "column:tmp_calculo_mes.num_cta",
+          "name": "num_cta",
+          "type": "INTEGER",
+          "declaration": "num_cta INTEGER",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 120,
+            "end_line": 120,
+            "excerpt": "num_cta INTEGER"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.num_cte",
+          "name": "num_cte",
+          "type": "INTEGER",
+          "declaration": "num_cte INTEGER",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 121,
+            "end_line": 121,
+            "excerpt": "num_cte INTEGER"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.cve_producto",
+          "name": "cve_producto",
+          "type": "VARCHAR(40)",
+          "declaration": "cve_producto VARCHAR(40)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 122,
+            "end_line": 122,
+            "excerpt": "cve_producto VARCHAR(40)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.cve_dominio",
+          "name": "cve_dominio",
+          "type": "VARCHAR(20)",
+          "declaration": "cve_dominio VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 123,
+            "end_line": 123,
+            "excerpt": "cve_dominio VARCHAR(20)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.grupo_producto",
+          "name": "grupo_producto",
+          "type": "VARCHAR(20)",
+          "declaration": "grupo_producto VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 124,
+            "end_line": 124,
+            "excerpt": "grupo_producto VARCHAR(20)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.fec_alta",
+          "name": "fec_alta",
+          "type": "DATE",
+          "declaration": "fec_alta DATE",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 125,
+            "end_line": 125,
+            "excerpt": "fec_alta DATE"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.cve_mes_alta",
+          "name": "cve_mes_alta",
+          "type": "INTEGER",
+          "declaration": "cve_mes_alta INTEGER",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 126,
+            "end_line": 126,
+            "excerpt": "cve_mes_alta INTEGER"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.saldo_anterior",
+          "name": "saldo_anterior",
+          "type": "NUMERIC(18,2)",
+          "declaration": "saldo_anterior NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 127,
+            "end_line": 127,
+            "excerpt": "saldo_anterior NUMERIC(18,2)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.saldo_objetivo",
+          "name": "saldo_objetivo",
+          "type": "NUMERIC(18,2)",
+          "declaration": "saldo_objetivo NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 128,
+            "end_line": 128,
+            "excerpt": "saldo_objetivo NUMERIC(18,2)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.incremento_objetivo",
+          "name": "incremento_objetivo",
+          "type": "NUMERIC(18,2)",
+          "declaration": "incremento_objetivo NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 129,
+            "end_line": 129,
+            "excerpt": "incremento_objetivo NUMERIC(18,2)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.importe_1",
+          "name": "importe_1",
+          "type": "NUMERIC(18,2)",
+          "declaration": "importe_1 NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 130,
+            "end_line": 130,
+            "excerpt": "importe_1 NUMERIC(18,2)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.importe_2",
+          "name": "importe_2",
+          "type": "NUMERIC(18,2)",
+          "declaration": "importe_2 NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 131,
+            "end_line": 131,
+            "excerpt": "importe_2 NUMERIC(18,2)"
+          }
+        },
+        {
+          "id": "column:tmp_calculo_mes.importe_3",
+          "name": "importe_3",
+          "type": "NUMERIC(18,2)",
+          "declaration": "importe_3 NUMERIC(18,2)",
+          "nullable": true,
+          "primary_key": false,
+          "unique": false,
+          "business_definition": "No documentada en el DDL; consultar comentarios y evidencias.",
+          "source": {
+            "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+            "line": 132,
+            "end_line": 132,
+            "excerpt": "importe_3 NUMERIC(18,2)"
+          }
+        }
+      ],
+      "constraints": [],
+      "foreign_keys": [],
+      "business_definition": "No documentada como definición formal de tabla."
+    }
+  ],
+  "documentation": [
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:1",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 1,
+        "end_line": 7,
+        "excerpt": "/*\nDimensiones iniciales para el laboratorio financiero PostgreSQL.\nUniverso: 5,000 clientes; productos CHEQUES, AHORRO, C_PERSONAL y TDC.\nADVERTENCIA: script destructivo; DROP TABLE elimina las tablas existentes.\ndim_txn no tiene PK/UNIQUE, como se solicitó. Los JOIN a dim_txn deben usar\ncve_producto + cve_txn para no multiplicar movimientos.\n*/"
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:29",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 29,
+        "end_line": 29,
+        "excerpt": "----------- INSERTAMOS CLIENTES EN LA TABLA"
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:33",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 33,
+        "end_line": 33,
+        "excerpt": "-- Distribución exacta: 4,800 PF (96%) y 200 PM (4%)."
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:37",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 37,
+        "end_line": 37,
+        "excerpt": "-- Género PF exacto: 2,496 hombres y 2,304 mujeres (52%/48%)."
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:45",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 45,
+        "end_line": 45,
+        "excerpt": "-- Fechas sintéticas determinísticas."
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:55",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 55,
+        "end_line": 55,
+        "excerpt": "------------------------------Validando de que todos los clientes PF sean mayores de edad"
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:72",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 72,
+        "end_line": 72,
+        "excerpt": "--- Agregandop el segmento al que pértenecen los clientes"
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:100",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 100,
+        "end_line": 100,
+        "excerpt": "-- Sin PK/UNIQUE: cve_txn puede repetirse entre productos."
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:122",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 122,
+        "end_line": 122,
+        "excerpt": "-- VALIDACIONES"
+      }
+    },
+    {
+      "id": "doc:001_dimensiones_cliente_producto_txn (1).sql:145",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+        "line": 145,
+        "end_line": 145,
+        "excerpt": "-- Informa de códigos de transacción repetidos entre productos."
+      }
+    },
+    {
+      "id": "doc:002_generar_cuentas_y_saldos_enero_2026 (1).sql:1",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 1,
+        "end_line": 28,
+        "excerpt": "/*\nScript: 002_generar_cuentas_y_saldos_enero_2026.sql\n\nObjetivo:\n- Generar 5,000 cuentas por producto para los 5,000 clientes existentes.\n- Asignar una cuenta de cada producto a cada cliente.\n- Registrar el saldo inicial y el saldo de enero de 2026 en\n  cfg.fact_sdos_captacoloca_m.\n\nProductos y rangos de cuenta:\n  CHEQUES    : 100000 - 104999\n  AHORRO     : 200000 - 204999\n  TDC        : 300000 - 304999\n  C_PERSONAL : 400000 - 404999\n\nRangos inclusivos de saldo:\n  CHEQUES    :  8,000.00 -  12,000.00\n  AHORRO     :      5.00 -  10,000.00\n  TDC        : 10,000.00 - 120,000.00\n  C_PERSONAL : 50,000.00 -  85,000.00\n\nImportante:\n- Este script NO elimina datos existentes.\n- Para evitar duplicados, se detiene si ya existen registros de enero de\n  2026 para cualquiera de estos productos en cfg.fact_sdos_captacoloca_m.\n- La tabla de saldos mensuales funciona aquí como registro de cuenta/saldo\n  para enero. No se crea una tabla maestra independiente de cuentas.\n*/"
+      }
+    },
+    {
+      "id": "doc:002_generar_cuentas_y_saldos_enero_2026 (1).sql:139",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 139,
+        "end_line": 139,
+        "excerpt": "-- Validación 1: total esperado por producto (5,000 cada uno)."
+      }
+    },
+    {
+      "id": "doc:002_generar_cuentas_y_saldos_enero_2026 (1).sql:163",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 163,
+        "end_line": 163,
+        "excerpt": "-- Validación 2: deben existir 20,000 registros y 20,000 cuentas distintas."
+      }
+    },
+    {
+      "id": "doc:002_generar_cuentas_y_saldos_enero_2026 (1).sql:174",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 174,
+        "end_line": 174,
+        "excerpt": "-- Validación 3: detectar saldos fuera del rango autorizado."
+      }
+    },
+    {
+      "id": "doc:002_generar_cuentas_y_saldos_enero_2026 (1).sql:202",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 202,
+        "end_line": 202,
+        "excerpt": "-- Validación 4: cada cliente debe tener exactamente una cuenta por producto."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:1",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 1,
+        "end_line": 45,
+        "excerpt": "/*\nScript: 003_generar_transacciones_y_saldos_feb_jun_2026.sql\n\nObjetivo:\n- Generar movimientos mensuales para cada cuenta entre febrero y junio de 2026.\n- Calcular los importes para que el saldo de cierre de cada mes cumpla el\n  crecimiento objetivo definido por producto.\n- Insertar los movimientos en cfg.fact_txn_captacoloca_d.\n- Insertar los saldos de cierre mensuales en cfg.fact_sdos_captacoloca_m.\n\nCrecimiento mensual respecto al saldo de cierre del mes anterior:\n  Febrero 2026: Captación 2.0%; Colocación 3.0%.\n  Marzo-junio 2026: Captación 1.0%; Colocación 2.2%.\n\nSigno económico de las transacciones:\n  CHEQUES/AHORRO : depósito suma; retiro resta.\n  C_PERSONAL     : disposiciones suman deuda; pagos la reducen.\n  TDC            : compras y disposiciones suman deuda; pagos la reducen.\n\nLos importes almacenados en saldo_txn son positivos. El efecto de suma/resta\nse determina por cve_txn/desc_txn. Cada cuenta tendrá una transacción de cada\ntipo aplicable por mes.\n\nDistribución de importes:\n  CHEQUES/AHORRO:\n      retiro = 5% del saldo anterior\n      depósito = retiro + incremento objetivo\n  C_PERSONAL:\n      pago = 5% del saldo anterior\n      disposición = pago + incremento objetivo\n  TDC:\n      compras = 2% del saldo anterior\n      disposiciones = 2% del saldo anterior\n      pagos = compras + disposiciones - incremento objetivo\n\nEstas reglas producen importes positivos y garantizan que el saldo objetivo\nse alcance exactamente al centavo, salvo restricciones de datos existentes.\n\nImportante:\n- No elimina datos existentes.\n- Se detiene si detecta movimientos previos para febrero-junio de 2026 o\n  saldos mensuales previos a esos meses para los cuatro productos.\n- Requiere que el script de cuentas/saldos de enero haya terminado bien:\n  20,000 cuentas con cierre de enero registrado con fec_informacion = 20260131.\n*/"
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:117",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 117,
+        "end_line": 117,
+        "excerpt": "-- Tabla temporal para calcular una vez los importes y reutilizarlos"
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:118",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 118,
+        "end_line": 118,
+        "excerpt": "-- tanto para movimientos como para saldos de cierre."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:230",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 230,
+        "end_line": 230,
+        "excerpt": "-- Insertar movimientos. saldo_txn guarda el importe positivo;"
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:231",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 231,
+        "end_line": 231,
+        "excerpt": "-- el signo se interpreta por el código de transacción."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:311",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 311,
+        "end_line": 311,
+        "excerpt": "-- Validar que no haya importes de transacción nulos o <= 0."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:324",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 324,
+        "end_line": 324,
+        "excerpt": "-- Registrar el saldo de cierre del mes; cve_mes_alta permanece 202601"
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:325",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 325,
+        "end_line": 325,
+        "excerpt": "-- porque representa el mes de apertura de la cuenta."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:359",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 359,
+        "end_line": 359,
+        "excerpt": "-- VALIDACIÓN 1: movimientos por mes y producto."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:380",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 380,
+        "end_line": 380,
+        "excerpt": "-- VALIDACIÓN 2: saldos por mes/producto y crecimiento observado."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:432",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 432,
+        "end_line": 432,
+        "excerpt": "-- VALIDACIÓN 3: el saldo de cierre debe reconciliar con los movimientos."
+      }
+    },
+    {
+      "id": "doc:003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql:433",
+      "kind": "explicit_comment",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 433,
+        "end_line": 433,
+        "excerpt": "-- Los importes de saldo_txn son positivos; se aplica el signo según cve_txn."
+      }
+    },
+    {
+      "id": "mapping:002:3818",
+      "kind": "explicit_sql_mapping",
+      "description": "En enero saldo_apertura y saldo_mes reciben saldo_inicial.",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 133,
+        "end_line": 134,
+        "excerpt": "saldo_inicial,\n    saldo_inicial,"
+      }
+    },
+    {
+      "id": "mapping:003:12545",
+      "kind": "explicit_sql_mapping",
+      "description": "Desde febrero saldo_apertura recibe saldo_anterior y saldo_mes recibe saldo_objetivo.",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 336,
+        "end_line": 337,
+        "excerpt": "c.saldo_anterior,\n            c.saldo_objetivo,"
+      }
+    },
+    {
+      "id": "mapping:002:3479",
+      "kind": "explicit_sql_mapping",
+      "description": "En enero dominio procede de parámetros CAPTACION/COLOCACION.",
+      "source": {
+        "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+        "line": 112,
+        "end_line": 113,
+        "excerpt": "p.dominio"
+      }
+    },
+    {
+      "id": "mapping:003:9823",
+      "kind": "explicit_sql_mapping",
+      "description": "Desde febrero dominio recibe cve_dominio: DEPOSITS/LENDING/TDC; difiere de enero.",
+      "source": {
+        "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+        "line": 259,
+        "end_line": 260,
+        "excerpt": "c.cve_dominio"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "inferred:cfg.fact_sdos_captacoloca_m.num_cte",
+      "kind": "inferred_not_enforced",
+      "relationship": "cfg.fact_sdos_captacoloca_m.num_cte -> dim.dim_cliente.num_cte",
+      "reason": "Candidata por nombres y tipos compatibles; no es una FK declarada ni validada.",
+      "sources": [
+        {
+          "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+          "line": 32,
+          "end_line": 32,
+          "excerpt": "num_cte int4 NULL"
+        },
+        {
+          "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+          "line": 13,
+          "end_line": 13,
+          "excerpt": "num_cte INTEGER NOT NULL PRIMARY KEY"
+        }
+      ]
+    },
+    {
+      "id": "inferred:cfg.fact_sdos_captacoloca_m.cve_producto",
+      "kind": "inferred_not_enforced",
+      "relationship": "cfg.fact_sdos_captacoloca_m.cve_producto -> dim.dim_producto.cve_producto",
+      "reason": "Candidata por nombres y tipos compatibles; no es una FK declarada ni validada.",
+      "sources": [
+        {
+          "file": "referencias/002_generar_cuentas_y_saldos_enero_2026 (1).sql",
+          "line": 33,
+          "end_line": 33,
+          "excerpt": "cve_producto varchar(40) NULL"
+        },
+        {
+          "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+          "line": 83,
+          "end_line": 83,
+          "excerpt": "cve_producto VARCHAR(40) NOT NULL PRIMARY KEY"
+        }
+      ]
+    },
+    {
+      "id": "inferred:cfg.fact_txn_captacoloca_d.num_cte",
+      "kind": "inferred_not_enforced",
+      "relationship": "cfg.fact_txn_captacoloca_d.num_cte -> dim.dim_cliente.num_cte",
+      "reason": "Candidata por nombres y tipos compatibles; no es una FK declarada ni validada.",
+      "sources": [
+        {
+          "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+          "line": 49,
+          "end_line": 49,
+          "excerpt": "num_cte int4 NULL"
+        },
+        {
+          "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+          "line": 13,
+          "end_line": 13,
+          "excerpt": "num_cte INTEGER NOT NULL PRIMARY KEY"
+        }
+      ]
+    },
+    {
+      "id": "inferred:cfg.fact_txn_captacoloca_d.cve_producto",
+      "kind": "inferred_not_enforced",
+      "relationship": "cfg.fact_txn_captacoloca_d.cve_producto -> dim.dim_producto.cve_producto",
+      "reason": "Candidata por nombres y tipos compatibles; no es una FK declarada ni validada.",
+      "sources": [
+        {
+          "file": "referencias/003_generar_transacciones_y_saldos_feb_jun_2026 (1).sql",
+          "line": 50,
+          "end_line": 50,
+          "excerpt": "cve_producto varchar(40) NULL"
+        },
+        {
+          "file": "referencias/001_dimensiones_cliente_producto_txn (1).sql",
+          "line": 83,
+          "end_line": 83,
+          "excerpt": "cve_producto VARCHAR(40) NOT NULL PRIMARY KEY"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Catálogo estático: no demuestra existencia de tablas ni filas en PostgreSQL.",
+    "Los scripts disponibles no declaran FOREIGN KEY.",
+    "No hay glosario de negocio completo; un nombre no demuestra su significado.",
+    "Los comentarios son documentación, no restricciones del motor."
+  ]
+}

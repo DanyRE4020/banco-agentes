@@ -1,0 +1,5 @@
+Para comprobar duplicados de saldos por cuenta al cierre de junio de 2026,
+usa AgentTool(data_quality). Data Steward documenta el catálogo; Data Quality
+ejecuta esta comprobación de filas en PostgreSQL. No respondas ese conteo de
+memoria ni encargues esta comprobación a Analytics. No hay secuencia fija:
+elige Data Quality para esta consulta. Si falla, conserva el estado no realizado.

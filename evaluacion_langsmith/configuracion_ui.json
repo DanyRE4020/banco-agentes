@@ -1,0 +1,79 @@
+{
+  "version": "langsmith-ui-v1",
+  "configuration": "manual_in_langsmith_ui",
+  "dataset": "evaluacion-data-agentes",
+  "variable": {
+    "name": "contexto",
+    "source": "Run output",
+    "field": "contexto_evaluacion"
+  },
+  "python_evaluators_enabled": false,
+  "evaluators": [
+    {
+      "feedback_key": "enrutamiento_correcto",
+      "feedback_type": "categorical",
+      "categories": [
+        "correcto",
+        "incorrecto",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "enrutamiento_correcto.txt"
+    },
+    {
+      "feedback_key": "exactitud_numerica",
+      "feedback_type": "categorical",
+      "categories": [
+        "correcto",
+        "incorrecto",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "exactitud_numerica.txt"
+    },
+    {
+      "feedback_key": "responde_la_pregunta",
+      "feedback_type": "categorical",
+      "categories": [
+        "correcto",
+        "incorrecto",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "responde_la_pregunta.txt"
+    },
+    {
+      "feedback_key": "responde_correcto",
+      "feedback_type": "categorical",
+      "categories": [
+        "correcto",
+        "incorrecto",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "responde_correcto.txt"
+    },
+    {
+      "feedback_key": "manejo_de_fechas",
+      "feedback_type": "categorical",
+      "categories": [
+        "correcto",
+        "incorrecto",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "manejo_de_fechas.txt"
+    },
+    {
+      "feedback_key": "alucinacion",
+      "feedback_type": "categorical",
+      "categories": [
+        "detectada",
+        "no_detectada",
+        "no_aplica",
+        "no_verificable"
+      ],
+      "prompt_file": "alucinacion.txt"
+    }
+  ]
+}

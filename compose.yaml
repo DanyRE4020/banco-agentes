@@ -1,0 +1,29 @@
+name: banco-agentes
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.7-pg17-trixie@sha256:89947206f52eac3a9df9b663df7e76987cbdc623be6576b3a524953d568700d7
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-banco}
+      POSTGRES_USER: ${POSTGRES_USER:-banco_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Ejecuta scripts/preparar_postgres.ps1}
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+      APP_DB_USER: ${APP_DB_USER:-banco_lectura}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:?Ejecuta scripts/preparar_postgres.ps1}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sh:/docker-entrypoint-initdb.d/00-banco.sh:ro
+      - ./docker/postgres:/project/postgres:ro
+      - ./referencias:/project/referencias:ro
+    healthcheck:
+      test: [CMD-SHELL, 'test -f "$${PGDATA}/.banco-ready" && pg_isready -h 127.0.0.1 -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 5s
+      retries: 36
+      start_period: 20s
+
+volumes:
+  postgres_data:

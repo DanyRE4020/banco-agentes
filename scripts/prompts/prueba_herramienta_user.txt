@@ -1,0 +1,3 @@
+Estamos comprobando el intercambio de mensajes de este programa local.
+Consulta obtener_estado_prueba sin argumentos. Cuando recibas el resultado,
+devuelve únicamente el valor de su campo estado.

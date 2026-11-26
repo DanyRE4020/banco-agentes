@@ -1,0 +1,313 @@
+{
+  "registro_personas.pdf": {
+    "tipo": "identificacion",
+    "legible": true,
+    "campos": {
+      "nombre": {
+        "valor": "Lucía Marina Rojas Torres",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_nacimiento": {
+        "valor": "1990-05-20",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2032",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_identificacion": {
+        "valor": "no_oficial",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Registro Vecinal Aurora",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "numero_enmascarado": {
+        "valor": "****1234",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "comprobante_municipal.pdf": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_emision": {
+        "valor": "2026-10",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2026-12-15",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "electricidad",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Lumen Delta",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "230.00",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "tarjeta_vecinal.png": {
+    "tipo": "identificacion",
+    "legible": true,
+    "campos": {
+      "nombre": {
+        "valor": "Lucía Marina Rojas Torres",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_nacimiento": {
+        "valor": "1990-05-20",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2032",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_identificacion": {
+        "valor": "no_oficial",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Asociación Horizonte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "numero_enmascarado": {
+        "valor": "****1234",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "ficha_registro.jpg": {
+    "tipo": "identificacion",
+    "legible": true,
+    "campos": {
+      "nombre": {
+        "valor": "Lucía Marina Rojas Torres",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_nacimiento": {
+        "valor": "1990-05-20",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2032",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_identificacion": {
+        "valor": "no_oficial",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Registro Vecinal Aurora",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "numero_enmascarado": {
+        "valor": "****1234",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "documento_servicio.jpg": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_emision": {
+        "valor": "2026-08",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2026-12-15",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "agua",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Agua Nube",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "230.00",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "pago_servicio.png": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "Rafael Andrés León Soto",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_emision": {
+        "valor": "2026-10-04",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_vencimiento": {
+        "valor": "2026-12-15",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "gas",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "emisor": {
+        "valor": "Servicios Viento",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "230.00",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "archivo_vacio.pdf": {
+    "tipo": "desconocido",
+    "legible": false,
+    "campos": {}
+  }
+}

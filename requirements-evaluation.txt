@@ -1,0 +1,2 @@
+# Opcional: solo el runner de evaluación. No cambia el proveedor ni las versiones de ADK.
+langsmith==0.4.37

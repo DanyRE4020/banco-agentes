@@ -1,0 +1,702 @@
+{
+  "cfdi_mensual.pdf": {
+    "tipo": "cfdi_nomina",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "Lucía Marina Rojas Torres",
+        "texto_original": "Lucía Marina Rojas Torres",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodicidad": {
+        "valor": "mensual",
+        "texto_original": "mensual",
+        "etiqueta": "Periodicidad",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_inicio": {
+        "valor": "2026-10-01",
+        "texto_original": "2026-10-01",
+        "etiqueta": "Inicio del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_fin": {
+        "valor": "2026-10-31",
+        "texto_original": "2026-10-31",
+        "etiqueta": "Fin del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "concepto_pago": {
+        "valor": "Apoyo económico",
+        "texto_original": "Apoyo económico",
+        "etiqueta": "Concepto",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "neto_a_pagar": {
+        "valor": "12000.00",
+        "texto_original": "12000.00",
+        "etiqueta": "Neto a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "percepciones_brutas": {
+        "valor": "15000.00",
+        "texto_original": "15000.00",
+        "etiqueta": "Percepciones brutas",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "deducciones": {
+        "valor": "3000.00",
+        "texto_original": "3000.00",
+        "etiqueta": "Deducciones",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "cfdi_bajo.pdf": {
+    "tipo": "cfdi_nomina",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "Lucía Marina Rojas Torres",
+        "texto_original": "Lucía Marina Rojas Torres",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodicidad": {
+        "valor": "mensual",
+        "texto_original": "mensual",
+        "etiqueta": "Periodicidad",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_inicio": {
+        "valor": "2026-10-01",
+        "texto_original": "2026-10-01",
+        "etiqueta": "Inicio del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_fin": {
+        "valor": "2026-10-31",
+        "texto_original": "2026-10-31",
+        "etiqueta": "Fin del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "concepto_pago": {
+        "valor": "Apoyo económico",
+        "texto_original": "Apoyo económico",
+        "etiqueta": "Concepto",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "neto_a_pagar": {
+        "valor": "6500.00",
+        "texto_original": "6500.00",
+        "etiqueta": "Neto a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "percepciones_brutas": {
+        "valor": "8000.00",
+        "texto_original": "8000.00",
+        "etiqueta": "Percepciones brutas",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "deducciones": {
+        "valor": "1500.00",
+        "texto_original": "1500.00",
+        "etiqueta": "Deducciones",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "cfdi_parcial.pdf": {
+    "tipo": "cfdi_nomina",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "Lucía Marina Rojas Torres",
+        "texto_original": "Lucía Marina Rojas Torres",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodicidad": {
+        "valor": "mensual",
+        "texto_original": "mensual",
+        "etiqueta": "Periodicidad",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_inicio": {
+        "valor": "2026-10-01",
+        "texto_original": "2026-10-01",
+        "etiqueta": "Inicio del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "periodo_fin": {
+        "valor": "2026-10-31",
+        "texto_original": "2026-10-31",
+        "etiqueta": "Fin del periodo",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "concepto_pago": {
+        "valor": "Apoyo económico",
+        "texto_original": "Apoyo económico",
+        "etiqueta": "Concepto",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "neto_a_pagar": {
+        "valor": "12000.00",
+        "texto_original": "12000.00",
+        "etiqueta": "Neto a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "percepciones_brutas": {
+        "valor": "15000.00",
+        "texto_original": "15000.00",
+        "etiqueta": "Percepciones brutas",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "deducciones": {
+        "valor": "3000.00",
+        "texto_original": "3000.00",
+        "etiqueta": "Deducciones",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    },
+    "paginas": [
+      {
+        "pagina": 1,
+        "texto": "Titular: Lucía Marina Rojas Torres\nPeriodicidad: mensual\nInicio del periodo: 2026-10-01\nFin del periodo: 2026-10-31\nMoneda: MXN\nConcepto: Apoyo económico\nNeto a pagar: 12000.00\nPercepciones brutas: 15000.00\nDeducciones: 3000.00",
+        "estado": "leida"
+      },
+      {
+        "pagina": 2,
+        "texto": "[[ILEGIBLE]]",
+        "estado": "ilegible"
+      }
+    ]
+  },
+  "luz_antigua.pdf": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "texto_original": "ROJAS TORRES LUCIA MARINA",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "electricidad",
+        "texto_original": "electricidad",
+        "etiqueta": "Servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "servicio_descripcion": {
+        "valor": "Energía eléctrica",
+        "texto_original": "Energía eléctrica",
+        "etiqueta": "Descripción del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "texto_original": "Calle Ensayo 42, Ciudad Ejemplo",
+        "etiqueta": "Domicilio del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_fiscal": {
+        "valor": "Avenida Ficticia 900, Otra Ciudad",
+        "texto_original": "Avenida Ficticia 900, Otra Ciudad",
+        "etiqueta": "Domicilio fiscal",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "mes_facturado": {
+        "valor": "2025-01",
+        "texto_original": "2025-01",
+        "etiqueta": "Mes facturado",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_limite_pago": {
+        "valor": "2025-02-20",
+        "texto_original": "2025-02-20",
+        "etiqueta": "Límite de pago",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_corte": {
+        "valor": "2025-01-31",
+        "texto_original": "2025-01-31",
+        "etiqueta": "Corte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "1800.00",
+        "texto_original": "1800.00",
+        "etiqueta": "Total a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "factura_reciente.pdf": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "texto_original": "ROJAS TORRES LUCIA MARINA",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "agua",
+        "texto_original": "agua",
+        "etiqueta": "Servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "servicio_descripcion": {
+        "valor": "Suministro de agua",
+        "texto_original": "Suministro de agua",
+        "etiqueta": "Descripción del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "texto_original": "Calle Ensayo 42, Ciudad Ejemplo",
+        "etiqueta": "Domicilio del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_fiscal": {
+        "valor": "Avenida Ficticia 900, Otra Ciudad",
+        "texto_original": "Avenida Ficticia 900, Otra Ciudad",
+        "etiqueta": "Domicilio fiscal",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "mes_facturado": {
+        "valor": "2026-10",
+        "texto_original": "2026-10",
+        "etiqueta": "Mes facturado",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_limite_pago": {
+        "valor": "2026-12-01",
+        "texto_original": "2026-12-01",
+        "etiqueta": "Límite de pago",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_corte": {
+        "valor": "2026-11-10",
+        "texto_original": "2026-11-10",
+        "etiqueta": "Corte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "1800.00",
+        "texto_original": "1800.00",
+        "etiqueta": "Total a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_expedicion": {
+        "valor": "2026-11-01",
+        "texto_original": "2026-11-01",
+        "etiqueta": "Fecha de expedición",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "servicio_no_admitido.png": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "texto_original": "ROJAS TORRES LUCIA MARINA",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "servicio_digital",
+        "texto_original": "servicio_digital",
+        "etiqueta": "Servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "servicio_descripcion": {
+        "valor": "Suscripción de videojuegos",
+        "texto_original": "Suscripción de videojuegos",
+        "etiqueta": "Descripción del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "texto_original": "Calle Ensayo 42, Ciudad Ejemplo",
+        "etiqueta": "Domicilio del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_fiscal": {
+        "valor": "Avenida Ficticia 900, Otra Ciudad",
+        "texto_original": "Avenida Ficticia 900, Otra Ciudad",
+        "etiqueta": "Domicilio fiscal",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "mes_facturado": {
+        "valor": "2025-01",
+        "texto_original": "2025-01",
+        "etiqueta": "Mes facturado",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_limite_pago": {
+        "valor": "2025-02-20",
+        "texto_original": "2025-02-20",
+        "etiqueta": "Límite de pago",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_corte": {
+        "valor": "2025-01-31",
+        "texto_original": "2025-01-31",
+        "etiqueta": "Corte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "1800.00",
+        "texto_original": "1800.00",
+        "etiqueta": "Total a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_emision": {
+        "valor": "2026-11-01",
+        "texto_original": "2026-11-01",
+        "etiqueta": "Fecha de emisión",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "mes_limite.pdf": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "texto_original": "ROJAS TORRES LUCIA MARINA",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "electricidad",
+        "texto_original": "electricidad",
+        "etiqueta": "Servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "servicio_descripcion": {
+        "valor": "Energía eléctrica",
+        "texto_original": "Energía eléctrica",
+        "etiqueta": "Descripción del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "texto_original": "Calle Ensayo 42, Ciudad Ejemplo",
+        "etiqueta": "Domicilio del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_fiscal": {
+        "valor": "Avenida Ficticia 900, Otra Ciudad",
+        "texto_original": "Avenida Ficticia 900, Otra Ciudad",
+        "etiqueta": "Domicilio fiscal",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "mes_facturado": {
+        "valor": "2026-08",
+        "texto_original": "2026-08",
+        "etiqueta": "Mes facturado",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_limite_pago": {
+        "valor": "2025-02-20",
+        "texto_original": "2025-02-20",
+        "etiqueta": "Límite de pago",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_corte": {
+        "valor": "2025-01-31",
+        "texto_original": "2025-01-31",
+        "etiqueta": "Corte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "1800.00",
+        "texto_original": "1800.00",
+        "etiqueta": "Total a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  },
+  "paquete.pdf": {
+    "tipo": "comprobante",
+    "legible": true,
+    "campos": {
+      "titular": {
+        "valor": "ROJAS TORRES LUCIA MARINA",
+        "texto_original": "ROJAS TORRES LUCIA MARINA",
+        "etiqueta": "Titular",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "tipo_comprobante": {
+        "valor": "no_determinable",
+        "texto_original": "no_determinable",
+        "etiqueta": "Servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "servicio_descripcion": {
+        "valor": "Paquete integral",
+        "texto_original": "Paquete integral",
+        "etiqueta": "Descripción del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_servicio": {
+        "valor": "Calle Ensayo 42, Ciudad Ejemplo",
+        "texto_original": "Calle Ensayo 42, Ciudad Ejemplo",
+        "etiqueta": "Domicilio del servicio",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "domicilio_fiscal": {
+        "valor": "Avenida Ficticia 900, Otra Ciudad",
+        "texto_original": "Avenida Ficticia 900, Otra Ciudad",
+        "etiqueta": "Domicilio fiscal",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "mes_facturado": {
+        "valor": "2025-01",
+        "texto_original": "2025-01",
+        "etiqueta": "Mes facturado",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_limite_pago": {
+        "valor": "2025-02-20",
+        "texto_original": "2025-02-20",
+        "etiqueta": "Límite de pago",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_corte": {
+        "valor": "2025-01-31",
+        "texto_original": "2025-01-31",
+        "etiqueta": "Corte",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "importe_total": {
+        "valor": "1800.00",
+        "texto_original": "1800.00",
+        "etiqueta": "Total a pagar",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "moneda": {
+        "valor": "MXN",
+        "texto_original": "MXN",
+        "etiqueta": "Moneda",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      },
+      "fecha_emision": {
+        "valor": "2026-11-01",
+        "texto_original": "2026-11-01",
+        "etiqueta": "Fecha de emisión",
+        "pagina": 1,
+        "confianza": 0.99,
+        "lectura": "leido"
+      }
+    }
+  }
+}

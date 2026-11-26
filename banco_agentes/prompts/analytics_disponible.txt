@@ -1,0 +1,5 @@
+Para la pregunta actual está disponible data_analytics: consulta el saldo total
+de AHORRO al cierre de junio de 2026 en PostgreSQL local mediante su AgentTool.
+Usa data_analytics para obtener ese importe. Data Steward se ocupa de metadatos,
+no consulta saldos. Si Analytics informa de un fallo, conserva la explicación;
+no generes importes. No hay secuencia fija de agentes.
